@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2524b3caf2.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+        <div class="view" id="calculator">
+            <div class="row">
+                <div class="form col-xl-8 col-lg-8 mr-auto ml-auto text-left">
+                    <br>
+                    <h1 class="text-white font-weight-bold text-center">Conversor  <i class="fas fa-calculator"></i></h1> <br>
+                    <div class="input-group input-group-lg" id="celsius-input">
+                        <input type="number" class="form-control border border-white text-white bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="" id="celsius" name="global-input">
+                        <div class="input-group-append">
+                            <span class="input-group-text border border-white bg-transparent" id="inputGroupAppend">°𝙲</span>
+                        </div>
+                    </div> <P></P>
+                    <div class="input-group input-group-lg" id="farenheit-input">
+                        <input type="number" class="form-control border border-white text-white bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="" id="farenheit" name="global-input">
+                        <div class="input-group-append">
+                            <span class="input-group-text border border-white bg-transparent" id="inputGroupAppend">°𝙵</span>
+                        </div>
+                    </div> <P></P>
+                    <div class="input-group input-group-lg" id="kelvin-input">
+                        <input type="number" class="form-control border border-white text-white bg-transparent" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="" id="kelvin" name="global-input">
+                        <div class="input-group-append">
+                            <span class="input-group-text border border-white bg-transparent" id="inputGroupAppend">°𝙺</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <br>
+        <div class="view" id="a">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 mr-auto ml-auto text-left">
+                    <br>
+                    <h1 class="text-white font-weight-bold text-center">Temperatura Celsius <i class="fas fa-thermometer-quarter"></i></h1> <br>
+                    <div class="accordion text-justify" id="accordionOne">
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseone">
+                                Historia <i class="fas fa-book"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
+                            <div class="card-body text-white">
+                                El grado Celsius nace gracias a Anders Celsius, astrónomo sueco que vivió entre los años 1701 y 1744.
+                                En 1742, Anders Celsius definió su escala al considerar las temperaturas de ebullición y congelación del agua.
+                                Originalmente le fue asignado a los valores 0°C y 100 °C. En esta escala mientras tuviese mayor valor la temperatura es menos calurosa.
+                                Tiempo después, Jean-Pierre Christin y Carlos Linneo, invirtieron ambos puntos.
+                                <br>
+                                El método propuesto, al igual que el utilizado en el año 1724 para el grado Fahrenheit y para el Grado Rømer del año 1701, tenía la ventaja de que se basaba en las propiedades físicas de los materiales.
+                                Más adelante, William Thomson y Lord Kelvin, definieron en el año 1848 su escala absoluta de temperatura en términos del grado Celsius.
+                                Actualmente, luego de todos los cambios que ha sufrido esta escala, el grado Celsius se mide a través del grado kelvin.
+                                Los intervalos expresados en el grado Celsius y en el grado kelvin tienen el mismo valor. <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="https://i.pinimg.com/originals/42/56/39/42563974860a1439e30cfc154a41e641.jpg" class="image-fluid text-center" alt="Responsive image">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Qué es? <i class="far fa-question-circle"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                            <div class="card-body text-white">
+                              El grado Celsius es una medida de temperatura perteneciente al Sistema Internacional de Unidades (SI).
+                              La escala Celsius establece dos puntos fijos:
+                              <br>
+                              >> Punto de congelación del agua: 0 grados. <br>
+                              >> Punto de ebullición del agua a nivel del mar: 100 grados. <br>
+                              Como su inventor fraccionó su termómetro en cien partes iguales, recibe también el nombre de escala de temperatura centígrada.
+                              La escala Celsius se emplea en los países que aceptan el sistema métrico de unidades.
+                              El símbolo que se usa para representarlo es “°C”.
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Conversión <i class="fas fa-exchange-alt"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
+                            <div class="card-body text-white text-center">
+                                <h3>Celsius a Farenheit</h3>
+                                (0 °C × 9/5) + 32 = 32 °F
+                                <br> <br>
+                                <h3>Celsius a Kelvin</h3>
+                                0 °C + 273.15 = 273.15 K
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                            <div class="card-header border border-white" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Usos <i class="fas fa-tools"></i>
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionOne">
+                              <div class="card-body text-white">
+                                  La escala Celsius es muy utilizada para expresar las temperaturas de uso cotidiano, desde la temperatura del aire a la de un sinfín de dispositivos domésticos (hornos, freidoras, agua caliente, refrigeración, etc.). También se emplea en trabajos científicos y tecnológicos, aunque en muchos casos resulta obligado el uso de la   escala de Kelvin.
+                                  <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div> <br>
+        <div class="view" id="b">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 mr-auto ml-auto text-left">
+                    <br>
+                    <h1 class="text-white font-weight-bold text-center">Temperatura Farenheit <i class="fas fa-thermometer-half"></i></h1> <br>
+                    <div class="accordion text-justify" id="accordionTwo">
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingFive">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                Historia <i class="fas fa-book"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionTwo">
+                            <div class="card-body text-white">
+                                <h3>Version 1:</h3>
+                                En primer lugar, de acuerdo con el mismo Fahrenheit en un artículo que escribió en el año 1724, determinó tres puntos de temperatura.
+                                <br>
+                                Primero: el punto cero, determinado al poner el termómetro en una mezcla de hielo, agua y cloruro de amonio.
+                                <br>
+                                Se trataba de un tipo de mezcla frigorífica, que se estabiliza a una temperatura de 0 °F.
+                                <br>
+                                Se pone luego de esto el termómetro de alcohol o un termómetro hecho a base de material de mercurio en la mezcla y se deja que el líquido en el termómetro obtenga el punto más bajo.
+                                <br>
+                                El segundo punto: Que sea a 32 °F con la mezcla de agua y hielo, pero esta vez se hace sin sal.
+                                <br>
+                                El tercer punto: los 96 °F, es el nivel del líquido en el termómetro cuando se lo pone en la boca o bajo el brazo, exactamente en la axila.
+                                <br>
+                                En su experimento, Fahrenheit notó que al utilizar esta escala el mercurio podía hervir cerca de los 600 grados. <br> <br>
+                                <h3>Version 2:</h3>
+                                Otra teoría bastante conocida, indica que Fahrenheit estableció el 0 °F y los 100 °F en la escala, al grabar las más bajas temperaturas que él pudo medir y su propia temperatura corporal, al encontrarse en un ligero estado de fiebre. <br>
+                                A este respecto, tomó la más baja temperatura que se midió, como punto cero. <br>
+                                Fijó la temperatura de su propio cuerpo a 96 °F (a pesar que la escala tuvo que ser nuevamente calibrada a la temperatura normal del cuerpo). <br>
+                                Luego dividió la escala en doce secciones y cada una de esas secciones las volvió a dividir en 8 subdivisiones iguales. <br>
+                                Esto dio como resultado una escala de 96 grados. Fahrenheit notó que en esta escala el punto de congelación del agua estaba a los 32 °F y el punto de ebullición a los 212 °F. <br> <br>
+                                <h3>Version 3:</h3>
+                                Una variante de las dos versiones anteriores, es que la mezcla de hielo, sal y agua registrada en la escala Fahrenheit, la obtuvo en su laboratorio y la más alta la tomó de la temperatura de su cuerpo a 96 °F. <br>
+                                La intención de Fahrenheit, era dejar atrás las temperaturas negativas que tenía la escala Rømer.
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="https://ahombrosdegigantescienciaytecnologia.files.wordpress.com/2015/09/fahrenheit.jpg" class="image-fluid text-center" alt="Responsive image">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingSix">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ¿Qué es? <i class="far fa-question-circle"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionTwo">
+                            <div class="card-body text-white">
+                                El grado Fahrenheit, que está representado como °F, es una escala de temperatura propuesta por el físico alemán Daniel Gabriel Fahrenheit en el año 1724.
+                                La escala establece como las temperaturas de congelación y ebullición del agua, 32 °F y 212 °F, respectivamente. <br>
+                                El espacio entre ellos es divido en 180 partes iguales, asignándole a cada una el nombre de grado Fahrenheit.
+                                El método de definición es similar al utilizado para el grado Celsius (°C).
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingSeven">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                Conversión <i class="fas fa-exchange-alt"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionTwo">
+                            <div class="card-body text-white text-center">
+                                <h3>Farenheit a Celsius</h3>
+                                (32 °F − 32) × 5/9 = 0 °C
+                                <br> <br>
+                                <h3>Farenheit a Kelvin</h3>
+                                (32 °F − 32) × 5/9 + 273.15 = 273.15 K
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                            <div class="card-header border border-white" id="headingEight">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                  Usos <i class="fas fa-tools"></i>
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionTwo">
+                              <div class="card-body text-white">
+                                  Esta escala se utilizaba en la mayoría de los países anglosajones y Puerto Rico para todo tipo de uso. Desde la década de 1960 varios gobiernos han llevado a cabo políticas tendientes a la adopción del sistema internacional de unidades y su uso fue desplazado. Sin embargo, todavía se usa la medida en los Estados Unidos y en determinadas industrias muy rígidas, como la del petróleo. Además, se utiliza esta escala en los informes meteorológicos y en gastronomía. <br>
+                                  Para uso científico se usaba también una escala absoluta, la escala de Rankine, que fijaba el 0 al cero absoluto de forma análoga a lo que ocurre en la escala Kelvin.
+                                  <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div> <br>
+        <div class="view" id="c">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 mr-auto ml-auto text-left">
+                    <br>
+                    <h1 class="text-white font-weight-bold text-center">Temperatura Kelvin <i class="fas fa-thermometer-three-quarters"></i></h1> <br>
+                    <div class="accordion text-justify" id="accordionThree">
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingNine">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                Historia <i class="fas fa-book"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionThree">
+                            <div class="card-body text-white ">
+                                La escala Kelvin ha tenido diversos puntos importantes durante todo su desarrollo.
+                                William Thomson Kelvin, el precursor de esta escala, escribía en su diario sobre la escala termométrica absoluta.
+                                Hablaba de la necesidad de una escala donde «el frío infinito», que viene siendo el cero absoluto, fuera el punto nulo de la escalera, y que utilizara el grado Celsius por su incremento de unidad. <br>
+                                Esta escala absoluta es conocida hoy como la escala de temperatura termodinámica de Kelvin.
+                                Cien años más tarde, la resolución 3 del 10º  Comité Internacional de Pesos y Medidas (CGPM) daba a la escala Kelvin su moderna definición. <br>
+                                De esta manera se designaba el punto triple del agua como el segundo punto que define y asigna su temperatura a exactamente 273,16 grados Kelvin.
+                                En el año 1967 y 1968 se volvió a cambiar el incremento de la temperatura termodinámica como Kelvin con símbolo K.
+                                Y por último, en el año 2005 el comité del CGPM afirmaba que para los propósitos de delinear la temperatura del punto triple del agua, la definición de la escala de temperatura termodinámica Kelvin se referiría a la agua con una composición isotópica.
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="https://cumbrepuebloscop20.org/wp-content/uploads/2019/06/Thomson_Kelvin.jpg" class="image-fluid text-center" alt="Responsive image">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingTen">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                ¿Qué es? <i class="far fa-question-circle"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionThree">
+                            <div class="card-body text-white">
+                                El grado kelvin fue creado por William Thomson Kelvin. Se simboliza con la letra K y es una unidad de temperatura.
+                                Fue creado alrededor del año 1848, un siglo después del grado Celsius, a partir del cual surgió.
+                                Estableciendo su punto cero en el cero absoluto, y conserva la misma dimensión que la escala Celsius. <br>
+                                El Kelvin es una de las unidades del Sistema Internacional de Unidades (SI) y corresponde a una fracción de 1/273,16 partes de la temperatura del punto triple del agua.
+                                Es importante saber que nunca es representado por °K. Actualmente, su nombre no es el de grado kelvin, sino simplemente kelvin.
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                          <div class="card-header border border-white" id="headingEleven">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                Conversión <i class="fas fa-exchange-alt"></i>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionThree">
+                            <div class="card-body text-white text-center">
+                                <h3>Kelvin a Celsius</h3>
+                                273.15 K − 273.15 = 0 °C <br> <br>
+                                <h3>Kelvin a Farenheit</h3>
+                                (273.15 K − 273.15) × 9/5 + 32 = 32 °F
+                                <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card bg-transparent border border-white">
+                            <div class="card-header border border-white" id="headingTwelve">
+                              <h2 class="mb-0 text-center">
+                                <button class="btn btn-link collapsed text-white font-weight-bold text-center text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                  Usos <i class="fas fa-tools"></i>
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionThree">
+                              <div class="card-body text-white">
+                                  A la temperatura medida en kelvin se le llama «temperatura absoluta» y es la escala de temperaturas que se usa en ciencia, especialmente en trabajos de Física o Química. Lo ventajoso de usar K en vez de ºC ó ºF es que no existen valores negativos, como sí los hay en °C o en el °F.
+                                  Muestra de diferencia de valores de las temperaturas en las escalas, y kelvin. <br>
+                                  También en iluminación de vídeo y cine se utilizan los kelvin como referencia de la temperatura de color. Cuando un cuerpo negro es calentado emitirá un tipo de luz según la temperatura a la que se encuentra. Por ejemplo, 1600 K es la temperatura correspondiente a la salida o puesta del Sol. <br>
+                                  La temperatura del color de una lámpara de filamento de tungsteno corriente es de 2800 K. La temperatura de la luz utilizada en fotografía y artes gráficas es 5000 K y la del sol al mediodía con cielo despejado es de 5200 K. La luz de los días nublados es más azul, y es de más de 6000 K.
+                                  <br> <br>
+                                <div class="image-box text-center">
+                                  <img src="" class="image-fluid text-center" alt="">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

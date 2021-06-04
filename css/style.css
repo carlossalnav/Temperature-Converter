@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+  }
+
+.view{
+    animation: 3s ease-in-out 0s 1 slideInFromLeft;
+}
+
+.view h1{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    padding: 1rem
+}
+
+.view h2{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.view h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 15s ease-in-out infinite;
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.view input:focus {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+.view span{
+    color: white;
+}
+
+.view .btn{
+    text-transform: uppercase;
+    -webkit-transition: font-size 0.25s;
+       -moz-transition: font-size 0.25s;
+         -o-transition: font-size 0.25s;
+            transition: font-size 0.25s;
+}
+
+.view .btn:hover{
+    font-size: 26px;
+}
+
+#calculator div input{
+    margin: 10px;
+    transition: margin 0.25s;
+    transition: margin 0.25s;
+}
+
+#calculator div input:hover{
+    margin: 0px;
+}
+
+.view h1{
+    font-size: 40px;
+    transition: font-size 0.25s;
+    transition: font-size 0.25s;
+    transition: font-size 0.25s;
+    transition: font-size 0.25s;
+}
+
+.view h1:hover{
+    font-size: 50px;
+}
+
+.view i{
+    padding-left: 10px;
+}
+
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.image-box img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+.image-box:hover img {
+    transform: scale(1.5);
+    transform: rotateX(45);
+}
+
+.card{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control{
+    font-size: larger;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type=number] { -moz-appearance:textfield; }
+
+@media only screen and (max-width: 360px) {
+    .view h1{
+        font-size: 25px;
+    }
+    .view h1:hover{
+        font-size: 30px;
+    }
+  }
